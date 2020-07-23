@@ -6,6 +6,7 @@
 }
 
 .menu {
+	position: sticky;
 	align: center;
 	height: stretch;
 	min-width: 35%;
@@ -20,6 +21,17 @@
 	max-width: 65%;
 }
 
+@media only screen and (max-width: 600px) {
+	.menu p {
+		font-size: 10px;
+	}
+
+	.main p {
+		font-size: 10px;
+	}
+}
+
+
 .footer {
 	grid-area: footer;
 	width:100%;
@@ -27,6 +39,10 @@
   bottom: 0px;
   left:0px;
 	padding: 0;
+}
+
+.footer p {
+	font-size: 12px;
 }
 
 .grid-container {
