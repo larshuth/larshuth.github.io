@@ -1,28 +1,30 @@
 .header {
-	grid-area: header;
-	text-align: center;
 	background-color: #F6F6EB;
-	height: 70px;
+	grid-area: header;
+	height: fit-content;
+	padding-top: -20px;
+	text-align: center;
 }
 
-.menu {
-	position: sticky;
-	align: center;
+.nav {
+	grid-area: nav;
+	text-align: center;
 	height: stretch;
-	min-width: 35%;
-	max-width: 35%;
+	position: sticky;
+	left:0px;
+	width: auto;
 }
 
 .main {
-	align: center;
 	grid-area: main;
 	height: stretch;
-	min-width: 65%;
-	max-width: 65%;
+	padding: 10%;
+	right:0px;
+	width: auto;
 }
 
 @media only screen and (max-width: 600px) {
-	.menu p {
+	.nav p {
 		font-size: 10px;
 	}
 
@@ -32,25 +34,54 @@
 }
 
 
-.footer {
-	grid-area: footer;
-	width:100%;
-  position: absolute;
-  bottom: 0px;
-  left:0px;
+.footer_left, .footer_mid, .footer_right {
+	position: absolute;
+	bottom: 0px;
 	padding: 0;
+	background-color: #F6F6EF;
 }
 
-.footer p {
+.footer_left {
+	grid-area: footer_left;
+	width:25%;
+	left:0px;
+	text-align: left;
+}
+
+.footer_mid {
+	grid-area: footer_mid;
+	width:50%;
+	left:25%;
+	text-align: left;
+}
+
+.footer_right {
+	grid-area: footer_right;
+	width:25%;
+	right:0px;
+	text-align: right;
+}
+
+.footer_left p, .footer_right p {
 	font-size: 12px;
+}
+
+.footer_mid p {
+	font-size: 12px;
+	color: #F6F6EB;
+}
+
+.footer_right a{
+	text-decoration: none;
+	border: none;
 }
 
 .grid-container {
 	display: grid;
 	grid-template-areas:
-		'header header'
-		'menu main'
-		'footer footer';
+		'header header header'
+		'nav main main'
+		'footer_left footer_mid footer_right';
 	grid-gap: 5px;
 }
 
