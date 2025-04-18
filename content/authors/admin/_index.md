@@ -10,7 +10,7 @@ first_name: Lars
 last_name: Huth
 
 # Status emoji
-status:
+status: Testing website
   icon: ☕️
 
 # Is this the primary user of the site?
@@ -25,7 +25,7 @@ organizations:
     url: 
 
 # Short bio (displayed in user profile at end of posts)
-bio: Fun guy. Likes: Data, taking photos, nature, martial arts. Dislikes: Anti-Democratic sentiment.
+bio: Fun guy. Likes data, taking photos, nature, martial arts. Dislikes anti-democratic sentiment.
 
 # Social Networking
 # Need to use another icon? Simply download the SVG icon to your `assets/media/icons/` folder.
