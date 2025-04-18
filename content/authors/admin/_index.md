@@ -10,7 +10,7 @@ first_name: Lars
 last_name: Huth
 
 # Status emoji
-status: Testing website
+status:
   icon: ☕️
 
 # Is this the primary user of the site?
